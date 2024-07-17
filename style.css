@@ -1,0 +1,148 @@
+body {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(40, 109, 86, 0.8); /* Adjust alpha value for transparency */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#box {
+    padding: 50px;
+    background-color: rgb(40, 109, 86);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    color: white;
+}
+
+#input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#btn {
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    background-color: rgb(132, 132, 134);
+    color: rgb(40, 109, 86);
+    border-radius: 5px;
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    font-size: 18px;
+    transition: 0.2s;
+    background-color: #ede6e6;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+.delete-btn {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(132, 132, 134);
+    color: rgb(40, 109, 86);
+    border-radius: 5px;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: rgb(109, 73, 73);
+    color: rgb(132, 132, 134);
+}
+
+footer {
+    background-color: rgba(40, 109, 86, 0.8); /* Adjust alpha value for transparency */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #box {
+        padding: 30px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    #btn {
+        width: 25%;
+    }
+
+    h1, header, footer {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #box {
+        padding: 20px;
+    }
+
+    input {
+        width: 65%;
+    }
+
+    #btn {
+        width: 30%;
+    }
+
+    h1, header, footer {
+        font-size: 18px;
+    }
+}
